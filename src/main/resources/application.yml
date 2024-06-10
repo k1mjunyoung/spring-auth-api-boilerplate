@@ -1,3 +1,20 @@
 spring:
   application:
     name: SpringAuthApiBoilerplate
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/jetz?serverTimezone=Asia/Seoul
+    username: root
+    password: rlawns098!mysql
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        globally_quoted_identifiers: true
+
+jwt:
+  secret:
+    key: x!A%D*G-KaPdSgVkYp3s5v8y/B?E(H+M
